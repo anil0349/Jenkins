@@ -38,3 +38,4 @@ fi
     docker run "${docker_arguments[@]}" ppiper/cx-server-companion /cx-server/cx-server-companion.sh "$@"
     exit $?
 }
+
