@@ -6,14 +6,24 @@
     <name>Jenkins - Root</name>
     <description>Jenkins - Root</description>
 
-    <groupId>com</groupId>
+    <groupId>com.sap.cloud.s4hana.examples</groupId>
     <artifactId>Jenkins</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.sap.cloud.s4hana</groupId>
+                <artifactId>sdk-bom</artifactId>
+                <version>2.19.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <properties>
-        <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
-        
         <java.version>1.8</java.version>
 
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -26,34 +36,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.sap.cloud.s4hana</groupId>
-                <artifactId>sdk-bom</artifactId>
-                <version>2.24.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>2.0.1.Final</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <modules>
-        <module>application</module>
+        <module>JenkinsT</module>
         <module>unit-tests</module>
         <module>integration-tests</module>
     </modules>
@@ -73,7 +57,7 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>3.5</version>
+                                    <version>3.3.9</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
                                     <version>${java.version}</version>
