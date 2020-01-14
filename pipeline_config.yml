@@ -52,9 +52,9 @@ stages:
 
   productionDeployment:
     cfTargets:
-      - org: 'P2001944614trial_trial'
+      - org: ''
         space: 'dev'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-        appName: 'MultiBranch1'
+        appName: ''
         manifest: 'manifest.yml'
         credentialsId: 'CF-DEPLOY'
