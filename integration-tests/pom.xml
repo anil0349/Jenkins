@@ -3,16 +3,16 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>address-manager - Integration Tests</name>
-    <description>address-manager - Integration Tests</description>
+    <name>MultiBranch1 - Integration Tests</name>
+    <description>MultiBranch1 - Integration Tests</description>
 
-    <artifactId>address-manager-integration-tests</artifactId>
-    <version>1.0</version>
+    <artifactId>MultiBranch1-integration-tests</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.sap.cloud.s4hana.examples</groupId>
-        <artifactId>address-manager</artifactId>
-        <version>1.0</version>
+        <groupId>com</groupId>
+        <artifactId>MultiBranch1</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -42,10 +42,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.sap.cloud.s4hana.examples</groupId>
-            <artifactId>address-manager-application</artifactId>
-            <classifier>classes</classifier>
-            <version>1.0</version>
+            <groupId>com</groupId>
+            <artifactId>MultiBranch1-application</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>ch.qos.logback</groupId>
@@ -55,23 +54,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.sap.cloud.s4hana.cloudplatform</groupId>
-            <artifactId>scp-cf</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sap.cloud.s4hana</groupId>
-            <artifactId>s4hana-all</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>com.sap.cloud.s4hana</groupId>
             <artifactId>testutil</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sap.cloud.s4hana.quality</groupId>
-            <artifactId>listeners-all</artifactId>
             <scope>test</scope>
         </dependency>
 
@@ -92,47 +76,38 @@
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test-autoconfigure</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
             <scope>test</scope>
             <exclusions>
+                <!-- exclude android-json to avoid conflict with org.json:json -->
+                <!-- see also: https://github.com/spring-projects/spring-boot/issues/8706 -->
                 <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
+                    <groupId>com.vaadin.external.google</groupId>
+                    <artifactId>android-json</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.tomee</groupId>
-            <artifactId>arquillian-tomee-embedded</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomee</groupId>
-            <artifactId>tomee-embedded</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-jdk14</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomee</groupId>
-            <artifactId>tomee-jaxrs</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

@@ -3,16 +3,16 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>address-manager - Unit Tests</name>
-    <description>address-manager - Unit Tests</description>
+    <name>MultiBranch1 - Unit Tests</name>
+    <description>MultiBranch1 - Unit Tests</description>
 
-    <artifactId>address-manager-unit-tests</artifactId>
-    <version>1.0</version>
+    <artifactId>MultiBranch1-unit-tests</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.sap.cloud.s4hana.examples</groupId>
-        <artifactId>address-manager</artifactId>
-        <version>1.0</version>
+        <groupId>com</groupId>
+        <artifactId>MultiBranch1</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -42,10 +42,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.sap.cloud.s4hana.examples</groupId>
-            <artifactId>address-manager-application</artifactId>
-            <classifier>classes</classifier>
-            <version>1.0</version>
+            <groupId>com</groupId>
+            <artifactId>MultiBranch1-application</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>ch.qos.logback</groupId>
@@ -67,11 +66,6 @@
         <dependency>
             <groupId>com.sap.cloud.s4hana</groupId>
             <artifactId>testutil</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sap.cloud.s4hana.quality</groupId>
-            <artifactId>listeners-all</artifactId>
             <scope>test</scope>
         </dependency>
 
