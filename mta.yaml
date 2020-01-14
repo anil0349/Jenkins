@@ -5,7 +5,7 @@ version: 0.0.1
 modules:
  - name: JenkinsT
    type: html5
-   path: JenkinsT
+   path: application
    parameters:
       disk-quota: 256M
       memory: 256M

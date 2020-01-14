@@ -3,11 +3,11 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Jenkins - Root</name>
-    <description>Jenkins - Root</description>
+    <name>JenkinsT - Root</name>
+    <description>JenkinsT - Root</description>
 
     <groupId>com.sap.cloud.s4hana.examples</groupId>
-    <artifactId>Jenkins</artifactId>
+    <artifactId>JenkinsT</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
 
@@ -37,7 +37,7 @@
     </properties>
 
     <modules>
-        <module>JenkinsT</module>
+        <module>application</module>
         <module>unit-tests</module>
         <module>integration-tests</module>
     </modules>
