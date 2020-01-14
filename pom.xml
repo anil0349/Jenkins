@@ -3,11 +3,11 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>MultiBranch1 - Root</name>
-    <description>MultiBranch1 - Root</description>
+    <name>Jenkins - Root</name>
+    <description>Jenkins - Root</description>
 
     <groupId>com</groupId>
-    <artifactId>MultiBranch1</artifactId>
+    <artifactId>Jenkins</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
