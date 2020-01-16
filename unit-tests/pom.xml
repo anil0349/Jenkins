@@ -3,15 +3,15 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <name>MultiBranch1 - Unit Tests</name>
-    <description>MultiBranch1 - Unit Tests</description>
+    <name>Jenkins - Unit Tests</name>
+    <description>Jenkins - Unit Tests</description>
 
-    <artifactId>MultiBranch1-unit-tests</artifactId>
+    <artifactId>Jenkins-unit-tests</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <parent>
         <groupId>com</groupId>
-        <artifactId>MultiBranch1</artifactId>
+        <artifactId>Jenkins</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -43,7 +43,7 @@
     <dependencies>
         <dependency>
             <groupId>com</groupId>
-            <artifactId>MultiBranch1-application</artifactId>
+            <artifactId>Jenkins-application</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
