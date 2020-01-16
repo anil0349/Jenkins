@@ -20,7 +20,7 @@
 
 ### General project setup
 general:
-  productiveBranch: 'master'
+  productiveBranch: 'FT/Feature/Trail'
 
 #Steps Specific Configuration
 steps:
