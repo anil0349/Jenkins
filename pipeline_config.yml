@@ -55,4 +55,5 @@ stages:
       - org: 'P2002014580trial_trial'
         space: 'dev'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+        appName: 'Jenkins'
         credentialsId: 'CF-DEPLOY'
