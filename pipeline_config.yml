@@ -50,11 +50,11 @@ stages:
   #    nonErpDestinations:
   #      - 'myCustomDestination'
 
-  productionDeployment:
+   productionDeployment:
     cfTargets:
-      - org: ''
+      - org: 'P2001944614trial_trial'
         space: 'dev'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-        appName: ''
+        appName: 'Jenkins'
         manifest: 'manifest.yml'
         credentialsId: 'CF-DEPLOY'
